@@ -29,9 +29,11 @@ extension Text {
     // Style for slider unit label
     func sliderUnitLabel() -> Text {
         return self
-            .font(.title2)
+            .font(.title3)
             .foregroundStyle(.primary)
             .bold()
+
+
     }
 
     // Default style for labels

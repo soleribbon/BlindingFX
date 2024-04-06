@@ -53,14 +53,22 @@ struct KnobPlusSectionView<Value>: View where Value: Hashable {
             VStack(alignment: .trailing) {
                 HStack {
                     Spacer()
+
                     if labelText == "Speed" {
                         Text("\(Int(value * 100 - 100))")
                             .sliderUnitLabel()
+                            .scaledToFill()
+                            .minimumScaleFactor(0.5)
+                            .lineLimit(1)
                     } else {
                         Text(value == resetValue ? "0" : String(format: "%.f", value))
                             .sliderUnitLabel()
+                            .scaledToFill()
+                            .minimumScaleFactor(0.5)
+                            .lineLimit(1)
                     }
-                }
+                }.frame(maxWidth: 50)
+
 
                 ZStack {
                     Button(action: {
@@ -90,7 +98,7 @@ struct KnobPlusSectionView<Value>: View where Value: Hashable {
 
                 KnobView(value: $value, manipulating: .constant(true),
                          minimum: minimumValue, maximum: maximumValue)
-                .touchSensitivity(8)
+                .touchSensitivity(6)
                 .trackStyle(widthFactor: 0.06, color: trackColor)
                 .progressStyle(widthFactor: 0.06, color: progressColor)
                 .indicatorStyle(widthFactor: 0.06, color: indicatorColor, length: 1)
@@ -98,7 +106,6 @@ struct KnobPlusSectionView<Value>: View where Value: Hashable {
                     UIImpactFeedbackGenerator(style: .light).impactOccurred()
                     onChange(newValue)
                 }
-                .frame(minWidth: 100, maxWidth: 240, minHeight: 100, maxHeight: 240)
                 .aspectRatio(1.0, contentMode: .fit)
                 .accessibilityIdentifier("pan knob")
 
@@ -110,7 +117,7 @@ struct KnobPlusSectionView<Value>: View where Value: Hashable {
                         }
                     }
                 } label: {
-                    Text("Change \(labelText)")
+                    Text("\(labelText)")
                         .underline()
                         .font(.caption)
                         .foregroundColor(.primary)
@@ -124,7 +131,15 @@ struct KnobPlusSectionView<Value>: View where Value: Hashable {
 
 
             }
+            .padding(6)
+
         }
+
+        .overlay(
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(Color.gray.opacity(0.15), lineWidth: 1)
+        )
+        .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 2)
     }
 
 }

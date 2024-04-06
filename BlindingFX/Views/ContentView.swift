@@ -95,7 +95,7 @@ struct ContentView: View {
                     }
                     Spacer()
                     //slider view
-                    VStack {
+                    VStack (alignment: .center){
 
                         HStack (alignment: .center){
                             Text("Now Editing: ")
