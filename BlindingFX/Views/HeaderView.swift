@@ -8,10 +8,30 @@
 import SwiftUI
 
 struct HeaderView: View {
+
+    //Extra - to use if I want to display the app version
+    let officialAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+
+
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .leading) {
+                Text("BlindingFX")
+                    .bold()
+                    .font(.title)
+                    .foregroundColor(.primary)
+
+                Text("Unleash your inner DJ")
+                    .font(.title3)
+                    .foregroundColor(.primary)
+
+            }
+            Spacer()
+        }
     }
 }
+
 
 #Preview {
     HeaderView()

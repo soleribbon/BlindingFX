@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5377CE432BC081D1009B1733 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377CE422BC081D1009B1733 /* HeaderView.swift */; };
+		5377CE462BC08246009B1733 /* EasyPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377CE452BC08246009B1733 /* EasyPlayer.swift */; };
+		5377CE4B2BC082A1009B1733 /* Energetic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5377CE4A2BC082A1009B1733 /* Energetic.mp3 */; };
+		5377CE4D2BC082DB009B1733 /* TextExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377CE4C2BC082DB009B1733 /* TextExtension.swift */; };
+		5377CE522BC08625009B1733 /* Knob-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 5377CE512BC08625009B1733 /* Knob-iOS */; };
+		5377CE542BC095EE009B1733 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377CE532BC095EE009B1733 /* DocumentPicker.swift */; };
+		5377CE562BC0B61D009B1733 /* KnobSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377CE552BC0B61D009B1733 /* KnobSectionView.swift */; };
+		5377CE582BC0C851009B1733 /* KnobPlusSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5377CE572BC0C851009B1733 /* KnobPlusSectionView.swift */; };
 		53CABDC22BC0817700BF499F /* BlindingFXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CABDC12BC0817700BF499F /* BlindingFXApp.swift */; };
 		53CABDC42BC0817700BF499F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CABDC32BC0817700BF499F /* ContentView.swift */; };
 		53CABDC62BC0817800BF499F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53CABDC52BC0817800BF499F /* Assets.xcassets */; };
@@ -34,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5377CE422BC081D1009B1733 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		5377CE452BC08246009B1733 /* EasyPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPlayer.swift; sourceTree = "<group>"; };
+		5377CE4A2BC082A1009B1733 /* Energetic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Energetic.mp3; sourceTree = "<group>"; };
+		5377CE4C2BC082DB009B1733 /* TextExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextExtension.swift; sourceTree = "<group>"; };
+		5377CE532BC095EE009B1733 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		5377CE552BC0B61D009B1733 /* KnobSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobSectionView.swift; sourceTree = "<group>"; };
+		5377CE572BC0C851009B1733 /* KnobPlusSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnobPlusSectionView.swift; sourceTree = "<group>"; };
 		53CABDBE2BC0817700BF499F /* BlindingFX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlindingFX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53CABDC12BC0817700BF499F /* BlindingFXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindingFXApp.swift; sourceTree = "<group>"; };
 		53CABDC32BC0817700BF499F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5377CE522BC08625009B1733 /* Knob-iOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +87,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5377CE412BC081C7009B1733 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5377CE422BC081D1009B1733 /* HeaderView.swift */,
+				53CABDC32BC0817700BF499F /* ContentView.swift */,
+				5377CE4C2BC082DB009B1733 /* TextExtension.swift */,
+				5377CE552BC0B61D009B1733 /* KnobSectionView.swift */,
+				5377CE572BC0C851009B1733 /* KnobPlusSectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5377CE442BC08237009B1733 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				5377CE452BC08246009B1733 /* EasyPlayer.swift */,
+				5377CE532BC095EE009B1733 /* DocumentPicker.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		5377CE472BC0826D009B1733 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5377CE4A2BC082A1009B1733 /* Energetic.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		53CABDB52BC0817700BF499F = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +139,10 @@
 		53CABDC02BC0817700BF499F /* BlindingFX */ = {
 			isa = PBXGroup;
 			children = (
+				5377CE472BC0826D009B1733 /* Resources */,
+				5377CE442BC08237009B1733 /* Logic */,
+				5377CE412BC081C7009B1733 /* Views */,
 				53CABDC12BC0817700BF499F /* BlindingFXApp.swift */,
-				53CABDC32BC0817700BF499F /* ContentView.swift */,
 				53CABDC52BC0817800BF499F /* Assets.xcassets */,
 				53CABDC72BC0817800BF499F /* Preview Content */,
 			);
@@ -143,6 +190,9 @@
 			dependencies = (
 			);
 			name = BlindingFX;
+			packageProductDependencies = (
+				5377CE512BC08625009B1733 /* Knob-iOS */,
+			);
 			productName = BlindingFX;
 			productReference = 53CABDBE2BC0817700BF499F /* BlindingFX.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +265,9 @@
 				Base,
 			);
 			mainGroup = 53CABDB52BC0817700BF499F;
+			packageReferences = (
+				5377CE502BC08625009B1733 /* XCRemoteSwiftPackageReference "Knob" */,
+			);
 			productRefGroup = 53CABDBF2BC0817700BF499F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +286,7 @@
 			files = (
 				53CABDC92BC0817800BF499F /* Preview Assets.xcassets in Resources */,
 				53CABDC62BC0817800BF499F /* Assets.xcassets in Resources */,
+				5377CE4B2BC082A1009B1733 /* Energetic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +312,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				53CABDC42BC0817700BF499F /* ContentView.swift in Sources */,
+				5377CE4D2BC082DB009B1733 /* TextExtension.swift in Sources */,
+				5377CE582BC0C851009B1733 /* KnobPlusSectionView.swift in Sources */,
+				5377CE432BC081D1009B1733 /* HeaderView.swift in Sources */,
+				5377CE462BC08246009B1733 /* EasyPlayer.swift in Sources */,
+				5377CE562BC0B61D009B1733 /* KnobSectionView.swift in Sources */,
+				5377CE542BC095EE009B1733 /* DocumentPicker.swift in Sources */,
 				53CABDC22BC0817700BF499F /* BlindingFXApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,7 +482,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BlindingFX/Preview Content\"";
-				DEVELOPMENT_TEAM = 9BE635EL7K;
+				DEVELOPMENT_TEAM = JPXSGQNS89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -430,6 +490,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -451,7 +512,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BlindingFX/Preview Content\"";
-				DEVELOPMENT_TEAM = 9BE635EL7K;
+				DEVELOPMENT_TEAM = JPXSGQNS89;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -459,6 +520,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,6 +650,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5377CE502BC08625009B1733 /* XCRemoteSwiftPackageReference "Knob" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/bradhowes/Knob.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5377CE512BC08625009B1733 /* Knob-iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5377CE502BC08625009B1733 /* XCRemoteSwiftPackageReference "Knob" */;
+			productName = "Knob-iOS";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 53CABDB62BC0817700BF499F /* Project object */;
 }

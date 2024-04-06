@@ -1,0 +1,15 @@
+{
+  "originHash" : "810c085ac7b9247493e772fb3126c51ce5ecd2a3aaf9436831ff762a01927bf7",
+  "pins" : [
+    {
+      "identity" : "knob",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bradhowes/Knob.git",
+      "state" : {
+        "revision" : "96ef8c40bb826c961e28f658ae9b782a34287cd5",
+        "version" : "3.0.3"
+      }
+    }
+  ],
+  "version" : 3
+}
