@@ -21,6 +21,6 @@
 
 
 
-A SwiftUI playgrounds app. 
+Built with SwiftUI & Love. 
 
 [More on me](https://raviheyne.com "More on me")
